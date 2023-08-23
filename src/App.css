@@ -8,13 +8,36 @@
   --dark-blue: hsl(223, 47%, 23%);
 }
 body {
-    font-size: 16px;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("src/assets/pattern-background-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue);
+  display: flex;
+  justify-content: center;
 }
 
-.attribution {
-  font-size: 11px;
+.container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+p {
   text-align: center;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+.payment-button{
+  background-color: var(--bright-blue);
+  color: white;
 }
