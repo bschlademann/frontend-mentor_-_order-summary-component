@@ -2,21 +2,31 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="container">
-      <img src="src/assets/illustration-hero.svg" alt="dancing person" />
-      <p>Order Summary</p>
-      <p>
-        You can now listen to millions of songs, audiobooks, and podcasts on any
-        device anywhere you like!
-      </p>
-      <p className="plan-selection">
-        <img src="src/assets/icon-music.svg" alt="icon musical note" />
-        Annual Plan
-        <div>$59.99/year</div>
-        <div>Change</div>
-      </p>
-      <div className="payment-button">Proceed to Payment</div>
-      <div> Cancel Order</div>
+    <div className="component">
+      <img
+        className="hero"
+        src="src/assets/illustration-hero.svg"
+        alt="dancing person"
+      />
+      <div className="container">
+        <div className="title">Order Summary</div>
+        <div className="description">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </div>
+
+        <div className="plan-selection">
+          <img src="src/assets/icon-music.svg" alt="icon musical note" />
+          <div>
+            <div className="plan-type">Annual Plan</div>
+            <div className="plan-cost">$59.99/year</div>
+          </div>
+          <div className="plan-change-button">Change</div>
+        </div>
+
+        <div className="payment-button">Proceed to Payment</div>
+        <div className="cancel-button"> Cancel Order</div>
+      </div>
     </div>
   );
 }

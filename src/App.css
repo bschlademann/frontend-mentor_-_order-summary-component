@@ -6,9 +6,12 @@
   --very-pale-blue: hsl(225, 100%, 98%);
   --desaturated-blue: hsl(224, 23%, 55%);
   --dark-blue: hsl(223, 47%, 23%);
+  /* border radius */
+  --border-radius-component: 15px;
+  --border-radius-inner-elements: 10px;
 }
 body {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Red Hat Display", sans-serif;
   background-image: url("src/assets/pattern-background-desktop.svg");
   background-size: contain;
@@ -18,26 +21,86 @@ body {
   justify-content: center;
 }
 
-.container {
-  margin-top: 3rem;
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.component {
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 400px;
   background-color: white;
-  border-radius: 1rem;
-}
-
-img {
-  max-width: 100%;
-  border-radius: 1rem 1rem 0rem 0rem;
-}
-
-p {
+  border-radius: var(--border-radius-component);
   text-align: center;
 }
 
-.payment-button{
+.hero {
+  max-width: 100%;
+  border-radius: var(--border-radius-component) var(--border-radius-component)
+    0px 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 370px;
+}
+
+.container div {
+  width: 80%;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.description {
+  font-weight: 500;
+  color: var(--desaturated-blue);
+}
+
+.plan-selection {
+  box-sizing: border-box;
+  background-color: var(--very-pale-blue);
+  border: 1rem solid var(--very-pale-blue);
+  border-radius: var(--border-radius-inner-elements);
+}
+
+.plan-selection img {
+  max-height: 80%;
+}
+
+.plan-selection div {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-type {
+  font-weight: 900;
+}
+
+.plan-cost {
+  font-weight: 500;
+  color: var(--desaturated-blue);
+}
+.plan-change-button {
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+
+.payment-button {
+  border-radius: var(--border-radius-inner-elements);
   background-color: var(--bright-blue);
   color: white;
+  height: 3rem;
+}
+
+.cancel-button {
+  color: var(--desaturated-blue);
+  font-weight: 700;
 }
