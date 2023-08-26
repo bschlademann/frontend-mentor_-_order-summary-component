@@ -10,6 +10,7 @@
   --border-radius-component: 15px;
   --border-radius-inner-elements: 10px;
 }
+
 body {
   font-size: 14px;
   font-family: "Red Hat Display", sans-serif;
@@ -69,16 +70,24 @@ div {
   background-color: var(--very-pale-blue);
   border: 1rem solid var(--very-pale-blue);
   border-radius: var(--border-radius-inner-elements);
+  /* border: 1px solid red; */
 }
 
-.plan-selection img {
-  max-height: 80%;
-}
+/* .plan-selection * {
+  border: 1px solid red;
+} */
 
-.plan-selection div {
-  display: flex;
+.plan-detail-container {
+  /* border: 1px solid blue; */
   flex-direction: column;
-}
+  /* FIXME: height should be the same as height icon-musical-note */
+  /* justify-content: space-between; */
+  }
+
+.plan-detail-container div {
+  flex-direction: column;
+  width: max-content;
+  }
 
 .plan-type {
   font-weight: 900;
@@ -88,9 +97,11 @@ div {
   font-weight: 500;
   color: var(--desaturated-blue);
 }
+
 .plan-change-button {
   font-weight: 700;
   color: var(--dark-blue);
+  justify-content: right;
 }
 
 .payment-button {
@@ -98,9 +109,21 @@ div {
   background-color: var(--bright-blue);
   color: white;
   height: 3rem;
+  box-shadow: 0px 15px 10px var(--pale-blue);
+}
+
+.payment-button:hover {
+  /* FIXME: get right hover color */
+  background-color: var(--desaturated-blue);
+  cursor:pointer;
 }
 
 .cancel-button {
   color: var(--desaturated-blue);
   font-weight: 700;
+}
+
+.cancel-button:hover {
+  color: var(--dark-blue);
+  cursor:pointer;
 }

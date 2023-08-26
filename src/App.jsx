@@ -16,10 +16,12 @@ function App() {
         </div>
 
         <div className="plan-selection">
-          <img src="src/assets/icon-music.svg" alt="icon musical note" />
           <div>
-            <div className="plan-type">Annual Plan</div>
-            <div className="plan-cost">$59.99/year</div>
+            <img src="src/assets/icon-music.svg" alt="icon musical note" />
+            <div className="plan-detail-container">
+              <div className="plan-type">Annual Plan</div>
+              <div className="plan-cost">$59.99/year</div>
+            </div>
           </div>
           <div className="plan-change-button">Change</div>
         </div>
