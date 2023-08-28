@@ -2,6 +2,7 @@
   /* primary */
   --pale-blue: hsl(225, 100%, 94%);
   --bright-blue: hsl(245, 75%, 52%);
+  --bright-blue-hover: hsla(245, 75%, 52%, 65%);
   /* neutral */
   --very-pale-blue: hsl(225, 100%, 98%);
   --desaturated-blue: hsl(224, 23%, 55%);
@@ -73,21 +74,25 @@ div {
   /* border: 1px solid red; */
 }
 
-/* .plan-selection * {
-  border: 1px solid red;
-} */
+.plan-selection:nth-child(3) {
+  /* background-color: yellow; */
+}
+
+.plan-selection * {
+  /* border: 1px solid red; */
+}
 
 .plan-detail-container {
   /* border: 1px solid blue; */
   flex-direction: column;
   /* FIXME: height should be the same as height icon-musical-note */
-  /* justify-content: space-between; */
-  }
+  justify-content: space-between;
+}
 
 .plan-detail-container div {
   flex-direction: column;
   width: max-content;
-  }
+}
 
 .plan-type {
   font-weight: 900;
@@ -99,9 +104,16 @@ div {
 }
 
 .plan-change-button {
+  color: var(--bright-blue);
   font-weight: 700;
-  color: var(--dark-blue);
+  text-decoration: underline;
   justify-content: right;
+}
+
+.plan-change-button:hover {
+  color: var(--bright-blue-hover);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .payment-button {
@@ -113,9 +125,8 @@ div {
 }
 
 .payment-button:hover {
-  /* FIXME: get right hover color */
-  background-color: var(--desaturated-blue);
-  cursor:pointer;
+  background-color: var(--bright-blue-hover);
+  cursor: pointer;
 }
 
 .cancel-button {
@@ -125,5 +136,5 @@ div {
 
 .cancel-button:hover {
   color: var(--dark-blue);
-  cursor:pointer;
+  cursor: pointer;
 }
