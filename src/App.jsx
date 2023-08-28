@@ -16,7 +16,7 @@ function App() {
         </div>
 
         <div className="plan-selection">
-          <div>
+          <div className="left">
             <img src="src/assets/icon-music.svg" alt="icon musical note" />
             <div className="plan-detail-container">
               <div className="plan-type">Annual Plan</div>
