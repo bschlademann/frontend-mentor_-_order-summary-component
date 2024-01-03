@@ -5,7 +5,7 @@ function App() {
     <div className="component">
       <img
         className="hero"
-        src="src/assets/illustration-hero.svg"
+        src="illustration-hero.svg"
         alt="dancing person"
       />
       <div className="container">
@@ -17,7 +17,7 @@ function App() {
 
         <div className="plan-selection">
           <div className="left">
-            <img src="src/assets/icon-music.svg" alt="icon musical note" />
+            <img src="icon-music.svg" alt="icon musical note" />
             <div className="plan-detail-container">
               <div className="plan-type">Annual Plan</div>
               <div className="plan-cost">$59.99/year</div>
