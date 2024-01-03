@@ -2,7 +2,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="component">
+    <main className="component">
       <img
         className="hero"
         src="illustration-hero.svg"
@@ -29,7 +29,7 @@ function App() {
         <div className="payment-button">Proceed to Payment</div>
         <div className="cancel-button"> Cancel Order</div>
       </div>
-    </div>
+    </main>
   );
 }
 
