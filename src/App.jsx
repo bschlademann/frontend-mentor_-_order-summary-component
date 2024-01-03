@@ -9,7 +9,7 @@ function App() {
         alt="dancing person"
       />
       <div className="container">
-        <div className="title">Order Summary</div>
+        <h1>Order Summary</h1>
         <div className="description">
           You can now listen to millions of songs, audiobooks, and podcasts on
           any device anywhere you like!
